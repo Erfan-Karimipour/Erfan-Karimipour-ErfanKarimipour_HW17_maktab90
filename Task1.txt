@@ -1,0 +1,7 @@
+Why to use React?
+
+1. Virtual DOM.                                       (Speed)
+2. One-Way Data Binding.                              (Easy to debug/understand)
+3. Reusable Components.                               (Size)
+4. JSX.                                               (Easy to understand)
+5. Community.                                         (Lots of tools)
