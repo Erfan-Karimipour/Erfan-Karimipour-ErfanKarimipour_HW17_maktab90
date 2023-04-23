@@ -29,7 +29,7 @@ function App() {
           </div>
 
       </section>
-      <section className='border-2 h-fit self-center border-black text-center w-80 py-12 rounded-3xl' style={{color: `rgb(${red}, ${green},${blue})`}}>
+      <section className='border-2 h-fit self-center border-black text-center w-80 py-12 rounded-3xl shadow-2xl' style={{color: `rgb(${red}, ${green},${blue})`}}>
         RGB ({red}, {green}, {blue})
       </section>
     </div>
