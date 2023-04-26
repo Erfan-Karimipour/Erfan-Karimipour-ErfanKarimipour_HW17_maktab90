@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import NewColor from './layouts/NewColor';
 
 function App() {
   const [arr, setArr] = useState ([]);
@@ -14,15 +15,15 @@ function App() {
     <div className='w-screen flex flex-col justify-around'>
       <button onClick={addColor} className='w-2/5 m-auto mt-10 mb-16 h-16 border-2 rounded-xl font-bold border-black text-center items-center'>add color</button>
   
-      <div className='grid grid-cols-1 gap-2 border-black p-1'>
+      <ul className='grid grid-cols-1 gap-2 border-black p-1'>
         
         {arr.map((item, index) => (
 
-          <div className='w-2/5 m-auto py-4 border-2 rounded-xl font-bold border-black text-center align-middle text-white' style={{backgroundColor: `#${item}`}} key={index}> <span className='bg-black bg-opacity-20 px-16 py-1 rounded-xl'>#{item}</span></div>
-       
+          <NewColor key={index} index={index} item={item} />
+
        ))}
 
-      </div>
+      </ul>
     </div>
   )
 }
