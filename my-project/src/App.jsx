@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import NewColor from './layouts/NewColor';
+import NewColor from './components/NewColor';
 
 function App() {
   const [arr, setArr] = useState ([]);
@@ -21,7 +21,7 @@ function App() {
 
           <NewColor key={index} index={index} item={item} />
 
-       ))}
+        ))}
 
       </ul>
     </div>
